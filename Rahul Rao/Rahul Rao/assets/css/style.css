@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top-banner{
+    background-image: url('../image/home/Path\ 1.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.btnoutline{
+   border:1px solid #722ed1;
+   color:  #722ed1;
+}
+.btnoutline:hover{
+  background-color:  #722ed1;
+  color: white;
+}
+.buttoncolor{
+    background-color: #722ed1;
+    color: white;
+}
+.buttoncolor:hover{
+    background-color: white;
+    color: rgb(49, 49, 173);
+}
+.buttoncolor1{
+    background-color: white;
+    color: black;
+}
+.buttoncolor1:hover{
+    border: 1px solid rgb(152, 152, 213);
+    color: rgb(49, 49, 173);
+}
+.banner{
+    background-image: url("../image/home/Path\ 606.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.line{
+    width: 100%;
+    height: 31px;   
+}
+
+.line::after{
+   content: "";
+   width: 100%;
+   border-bottom: 1px solid darkblue;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   z-index: 1;
+}
+.boxshadow{
+  
+  padding: 10px;
+  box-shadow:0px 12px 17px 0px #ddcaeb;
+}
+.boxstyle{
+background-color: #f9f0ff;
+}
+.footer-banner{
+   background-color: #fbfcff;
+ 
+}
+
+.sentbutton{
+    top: 9px;
+    right: 17px;
+}
+.shadow1{
+    box-shadow: 0px 12px 12px 12px rgb(240, 216, 216);
+}
+.bg-color{
+    color: #f9f0ff;
+}
+.fontcolor1{
+    color: #8989a2;
+}

@@ -1,0 +1,116 @@
+.border-star {
+    background-color: #000000;
+    height: 4px;
+    position: relative;
+    width: 100%;
+    max-width: 353px;
+}
+
+.border-star::after {
+    content: '';
+    background-image: url(./image/star2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: #1abc9c;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -15px;
+    
+}
+
+    .border-star1 {
+        background-color: #000000;
+        height: 4px;
+        position: relative;
+        width: 100%;
+        max-width: 353px;
+    }
+
+    .border-star1::after {
+        content: '';
+        background-image: url(./image/star2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        transform: translateX(-50%);
+        left: 50%;
+        top: -15px;
+    }
+
+    #contect {
+        border-bottom: 2px solid;
+    }
+
+    .btn-download {
+        color: white;
+        background-color: #1abc9c;
+        border: 2px solid white;
+        height: 63px;
+        width: 200px;
+        border-radius: 10px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .btn-download:hover {
+        color:black;
+        background-color:white;
+        background: white;
+        border-color: 2px solid white;
+        border: 2px solid white;
+
+    }
+
+    .bi-facebook ,.bi-apple,.bi-linkedin,.bi-browser-chrome{
+        padding: 6px 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 30px;
+       
+       
+    }
+    .bi-facebook:hover ,.bi-apple:hover,.bi-linkedin:hover,.bi-browser-chrome:hover{
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0)
+
+    }
+    #mainNev{
+        padding-top: 1rem;
+        padding-bottom:1rem;
+        font-weight: 700;
+
+
+    }
+    .bg{
+        background-color: #2c3e50
+    }
+    .bg1{
+        background-color: #1abc9c;
+    }
+   
+  
+   .main-font{
+    font-size: 3.5rem;
+   }
+  
+  
+
+
+  
+    @media(min-width:990px){
+        #mainNev{
+            padding-top: 1rem;
+            padding-bottom:1rem;
+            transition: padding-top 0.3s, padding-bottom 0.3s;
+        }
+    }
+.hovercolor:hover{
+      
+      opacity: .4;
+}

@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pavillon</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="./CSS/bootstrap-webpixels-v1.1.93.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+
+    <!-- OWN CSS  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/phone.css" />
+  </head>
+
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="./image/Splash.jpg" alt="Loading..." />
+    </div>
+    <main>
+      <div class="containe">
+        <section class="panel top-banner py-20">
+          <div class="container-fluid">
+            <nav
+              class="navbar navbar-expand-lg navbar-light navbar-dark my-auto fixed-top navbar-fixed-top my-0 top"
+              id="navbar"
+            >
+              <a class="navbar-brand" href="#"
+                ><img
+                  class="d-inline-block align-top ps-0 Logo"
+                  src="./image/logo1.svg"
+                  alt="logo"
+              /></a>
+
+              <div
+                class="collapse navbar-collapse navbar1"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-4">
+                    <a
+                      class="text-white font-24 roboto-font"
+                      aria-current="page"
+                      href=""
+                      >Accueil
+                    </a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a
+                      class="font-24 px-3 text-white roboto-font"
+                      aria-current="page"
+                      href="#"
+                      >Historique</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="font-24 px-3 text-white roboto-font" href="#"
+                      >Galerie</a
+                    >
+                  </li>
+
+                  <li class="nav-item mx-4">
+                    <a class="font-24 px-3 text-white roboto-font" href="#"
+                      >Boutique</a
+                    >
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="font-24 px-3 text-white roboto-font" href="#"
+                      >Nous Joindre</a
+                    >
+                  </li>
+                </ul>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="font-24 dropdown-toggle text-white mx-4"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >En</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">En</a></li>
+                    <li><a class="dropdown-item" href="#">Fr</a></li>
+                  </ul>
+                </li>
+                <div class="dropup mt-lg-0 mt-16">
+                  <button type="button" class="btn button-white font-24">
+                    <img src="./image/navbar button logo.svg" alt="" />Réserver
+                  </button>
+                  <div class="dropup-content1" id="btnhover">
+                    <img
+                      class="img-fluid"
+                      src="./image/button logo2.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn bg-none d-none d-lg-flex"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <img class="w-5" src="./image/dropdown.svg" />
+              </button>
+              <button
+                class="btn bg-none d-flex d-lg-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight1"
+                aria-controls="offcanvasRight1"
+              >
+                <img class="w-5" src="./image/dropdown.svg" />
+              </button>
+            </nav>
+
+            <div
+              class="offcanvas offcanvas-end border-0 black mt-32"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-body mb-0 d-none d-lg-flex">
+                <ul class="list-unstyled">
+                  <li class="nav-item">
+                    <a
+                      class="active text-md text-white my-2 roboto-font"
+                      aria-current="page"
+                      href="#"
+                      >Accueil</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-md text-white my-2 roboto-font" href="#"
+                      >Historique</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-md text-white my-2 roboto-font" href="#"
+                      >Galerie</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-md text-white my-2 roboto-font" href="#"
+                      >Boutique</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-md text-white my-2 roboto-font" href="#"
+                      >Nous Joindre</a
+                    >
+                  </li>
+                </ul>
+                <div class="box1">
+                  <div class="row">
+                    <div class="col-2 mb-5">
+                      <i class="bi bi-telephone text-white"></i>
+                    </div>
+                    <div class="col-8">
+                      <span
+                        class="text-white text-md font-light text-start roboto-font"
+                        >1.833.513.LOUP (5678)</span
+                      >
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <i class="bi bi-facebook text-white"></i>
+                      </div>
+                      <div class="col-10">
+                        <span
+                          class="roboto text-white text-md font-light text-start roboto-font"
+                          >Suivez-nous sur
+                          <a class="text-white font-semibold" href="#"
+                            ><strong> Facebook!</strong></a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="offcanvas offcanvas-end border-0 black top-32"
+              tabindex="-1"
+              id="offcanvasRight1"
+              aria-labelledby="offcanvasRight1Label"
+            >
+              <div class="offcanvas-body mb-0 d-flex d-lg-none">
+                <ul class="list-unstyled mx-auto">
+                  <li class="nav-item">
+                    <a
+                      class="active text-lg font-light text-white my-2 roboto-font"
+                      aria-current="page"
+                      *href="#"
+                    >
+                      Accueil</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="text-lg font-light text-white my-2 roboto-font"
+                      href="#"
+                      >Historique</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="text-lg font-light text-white my-2 roboto-font"
+                      href="#"
+                      >Galerie</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="text-lg font-light text-white my-2 roboto-font"
+                      href="#"
+                      >Boutique</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="text-lg font-light text-white my-2 roboto-font"
+                      href="#"
+                      >Nous Joindre</a
+                    >
+                  </li>
+                </ul>
+                <div class="box1 my-5">
+                  <div class="row">
+                    <div class="row">
+                      <div class="col-2 my-5">
+                        <div class="language-side-menu">
+                          <img
+                            src="https://www.pavillondelafaune.com/wp-content/themes/pavillon/assets/img/icon-lan.svg"
+                          />
+                          <li class="nav-item dropdown">
+                            <a
+                              class="font-24 dropdown-toggle text-white mx-4"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >En</a
+                            >
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">En</a></li>
+                              <li><a class="dropdown-item" href="#">Fr</a></li>
+                            </ul>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-10">
+                      <div class="dropup mt-lg-0 mt-16">
+                        <button
+                          type="button"
+                          class="btn button-1 font-24 text-white"
+                        >
+                          book
+                        </button>
+                        <div class="dropup-content" id="btnhover">
+                          <img
+                            class="img-fluid"
+                            src="./image/button logo2.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid pt-32">
+            <div class="slider">
+              <div class="">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-4 order-lg-o order-1 mt-auto">
+                    <div>
+                      <h1
+                        class="text-white heading-h1 font-regular my-lg-0 my-md-10 my-10 primary-font"
+                      >
+                        Bienvenue au Pavillon de la Faune
+                      </h1>
+                      <div class="border-star my-3"></div>
+                      <span class="font-21 roboto-font">
+                        Situé sur les rives du lac Aylmerà Stratford dans un
+                        décor enchanteur, nous vous invitons à découvrir une
+                        facette de la nature complètement différente!
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-5 order-lg-1 order-0 d-flex justify-content-center my-auto"
+                  >
+                    <img src="./image/wolf2 1.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-3 col-lg-3 d-flex justify-content-center my-auto order-lg-2 order-2"
+                  >
+                    <div class="position-relative dblock">
+                      <img src="./image/wolf3.png" alt="" />
+                      <div class="play-icon-overlay">
+                        <img
+                          class="home-play-button"
+                          src="./image/play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-4 order-lg-o order-1 mt-auto">
+                    <div>
+                      <h1
+                        class="text-white heading-h1 font-regular my-lg-0 my-md-10 my-10 primary-font"
+                      >
+                        Bienvenue au Pavillon de la Faune
+                      </h1>
+                      <div class="border-star my-3"></div>
+                      <span class="font-21 roboto-font">
+                        Situé sur les rives du lac Aylmerà Stratford dans un
+                        décor enchanteur, nous vous invitons à découvrir une
+                        facette de la nature complètement différente!
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="col-xl-6 col-lg-5 order-lg-1 order-0 d-flex justify-content-center my-auto"
+                  >
+                    <img class="" src="./image/wolf2 1.png" alt="" />
+                  </div>
+                  <div
+                    class="col-xl-3 col-lg-3 d-flex justify-content-center my-auto order-lg-2 order-2"
+                  >
+                    <div class="position-relative dblock">
+                      <img class="" src="./image/wolf3.png" alt="" />
+                      <div class="play-icon-overlay">
+                        <img
+                          class="home-play-button"
+                          src="./image/play.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hstack d-flex float-lg-end my-8">
+            <i class="bi bi-facebook text-white mx-6"></i>
+            <i class="bi bi-instagram text-white"></i>
+            <i
+              class="bi bi-envelope-fill text-white d-flex float-sm-end d-lg-none mx-6"
+            ></i>
+          </div>
+
+          <button class="btn button-white1 position-fixed myBtn" id="myBtn">
+            <img class="" src="./image/inbox1.png" alt="" />
+          </button>
+
+          <div id="myModal" class="modal myModal">
+            <div class="modal-content made">
+              <div class="row p-4">
+                <div
+                  class="font-regular text-30 text-white text-start primary-font"
+                >
+                  Infolettre
+                  <span class="close">&times;</span>
+                </div>
+                <div class="border-star1 my-3"></div>
+                <p class="text-21 text-white roboto-font">
+                  Restez au courant de nos événements à venir et de toutes nos
+                  actualités.
+                </p>
+                <input
+                  type="text"
+                  class="no-outline mt-6"
+                  placeholder="email@email.com"
+                />
+                <div>
+                  <button
+                    type="button"
+                    class="btn button-white my-8 roboto-font"
+                  >
+                    Inscrivez-moi
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn button-white1 position-fixed myBtn mt-16"
+            id="myBtn1"
+          >
+            <img
+              class=""
+              src="./image/message.png"
+              alt=""
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal50"
+            />
+          </button>
+          <div class="modal" id="myModal50">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content made1">
+                <div class="modal-header">
+                  <h1 class="modal-title text-white">Chat message</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+
+                <div class="modal-body"></div>
+
+                <div class="modal-footer">
+                  <input type="text" z />
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Sent
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="panel">
+          <div class="bg-3">
+            <div class="bg-2">
+              <div class="container-fluid">
+                <div class="row d-flex justify-content-evenly">
+                  <div
+                    class="col-xl-5 col-lg-6 col-md-6 mt-lg-32 mt-md-10 mt-10"
+                  >
+                    <img
+                      class="img-fluid w-full h-full"
+                      src="./image/home.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-xl-4 col-lg-4 col-md-6 mt-lg-32 mt-md-10 mt-10 position-relative overlap-40"
+                  >
+                    <span class="text-white text-14 ls-wide roboto-font"
+                      >Pavilion de la faune</span
+                    >
+                    <h1 class="heading-h1 text-white primary-font">
+                      Pour des rencontres inusitées
+                    </h1>
+                    <div class="border-star my-3"></div>
+                    <p class="text-base font-regular text-white roboto-font">
+                      Au cœur de la nature et sur les rives du lac Aylmer, le
+                      Pavillon de la Faune présente une impressionnante
+                      collection d'animaux naturalisés en provenance de
+                      l'Amérique du Nord.
+                    </p>
+                    <div class="dropup top-12">
+                      <button type="button" class="btn button-white font-24">
+                        <img
+                          src="./image/navbar button logo.svg"
+                          alt=""
+                        />Réserver
+                      </button>
+                      <div class="dropup-content">
+                        <img
+                          class="img-fluid"
+                          src="./image/button logo2.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="bg-1 w-full" src="./image/animals.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="panel mt-32">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="float-start">
+                  <h4 class="font-regular text-45 text-white primary-font">
+                    Galerie
+                  </h4>
+                  <span class="background-line"></span>
+                </div>
+                <div class="float-end taxt-white mt-sm-10 mt-0">
+                  <span class="btn float-left active on roboto-font text-white"
+                    >Tout</span
+                  >>
+                  <span class="btn float-left on1 roboto-font text-white"
+                    >Photos</span
+                  >>
+                  <span class="btn float-left on1 roboto-font text-white"
+                    >Photos</span
+                  >>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper ms-10 mt-10">
+            <div class="slider1">
+              <div>
+                <div class="container__img-holder">
+                  <img src="./image/eagle.png" alt="Image" />
+                </div>
+
+                <div class="hstack">
+                  <img
+                    class="d-lg-flex d-none"
+                    src="./image/picture.png"
+                    alt=""
+                  />
+                  <span class="vr-line hstack d-lg-flex d-none"></span>
+                  <p class="text-white roboto-font text-18">
+                    Au cœur de la nature et sur les rives du lac Aylmer, le
+                    Pavillon de la Faune présente une impressionnante collection
+                    d'animaux naturalisés.
+                  </p>
+                </div>
+              </div>
+              <div class="mx-2">
+                <div class="position-relative">
+                  <div class="container__img-holder">
+                    <img src="./image/eagle1 (1).png" alt="Image" />
+                  </div>
+                  <div class="play-icon-overlay">
+                    <img
+                      class="home-play-button"
+                      src="./image/play.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="hstack">
+                  <img
+                    class="d-lg-flex d-none"
+                    src="./image/play button.png"
+                    alt=""
+                  />
+
+                  <span class="vr-line hstack d-lg-flex d-none"></span>
+                  <p class="text-white roboto-font text-18">
+                    Au cœur de la nature et sur les rives du lac Aylmer, le
+                    Pavillon de la Faune présente une impressionnante collection
+                    d'animaux naturalisés.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="container__img-holder">
+                  <img src="./image/eagle.png" alt="Image" />
+                </div>
+                <div class="hstack">
+                  <img
+                    class="d-lg-flex d-none"
+                    src="./image/picture.png"
+                    alt=""
+                  />
+                  <span class="vr-line hstack d-lg-flex d-none"></span>
+                  <p class="text-white roboto-font text-18">
+                    Au cœur de la nature et sur les rives du lac Aylmer, le
+                    Pavillon de la Faune présente une impressionnante collection
+                    d'animaux naturalisés.
+                  </p>
+                </div>
+              </div>
+              <div class="mx-2">
+                <div class="position-relative">
+                  <div class="container__img-holder">
+                    <img src="./image/eagle1 (1).png  " alt="Image" />
+                  </div>
+                  <div class="play-icon-overlay">
+                    <img
+                      class="home-play-button"
+                      src="./image/play.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="hstack">
+                  <img
+                    class="d-lg-flex d-none"
+                    src="./image/play button.png"
+                    alt=""
+                  />
+                  <span class="vr-line hstack d-lg-flex d-none"></span>
+                  <p class="text-white roboto-font text-18">
+                    Au cœur de la nature et sur les rives du lac Aylmer, le
+                    Pavillon de la Faune présente une impressionnante collection
+                    d'animaux naturalisés.
+                  </p>
+                  s
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row img-popup overlap-40">
+              <img src="" alt="Popup Image" />
+              <div class="col show text-white"></div>
+              <div class="show text-white"></div>
+              <div class="close-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal " id="myModal1">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+
+            
+                <div class="modal-header ">
+                    <h1 class="modal-title text-white">Galerie</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+              
+                <div class="modal-body">
+                    <img src="./image/eagle.png" class="img-fluid w-full" alt="">
+                    <p class="text-white roboto-font text-18">Au cœur de la nature et sur les rives du lac Aylmer, le Pavillon de la Faune
+                      présente une impressionnante collection d'animaux naturalisés.</p>
+                </div>
+
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal " id="myModal2">
+      <div class="modal-dialog ">
+          <div class="modal-content">
+
+          
+              <div class="modal-header ">
+                  <h1 class="modal-title text-white">Galerie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+            
+              <div class="modal-body">
+                <div class="position-relative">
+                  <img src="./image/eagle1 (1).png" class="img-fluid w-full" alt="">
+                  <div class="play-icon-overlay">
+                    <img class="home-play-button" src="./image/play.png" alt="">
+                  </div>
+                </div>
+                  <p class="text-white roboto-font text-18">Au cœur de la nature et sur les rives du lac Aylmer, le Pavillon de la Faune
+                    présente une impressionnante collection d'animaux naturalisés.</p>
+              </div>
+
+              
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Close</button>
+              </div>
+
+          </div>
+      </div>
+  </div> -->
+        </section>
+
+        <section class="panel wrapper ms-10 mt-32">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="float-start">
+                  <h4 class="font-regular text-45 text-white primary-font">
+                    Boutique
+                  </h4>
+                  <span class="background-line"></span>
+                </div>
+                <div class="float-end taxt-white mt-sm-10 mt-0">
+                  <span
+                    class="btn float-left active on mt-5 roboto-font"
+                    data-cat="Tout"
+                    >Tout</span
+                  >
+                  <span
+                    class="btn float-left on1 mt-5 roboto-font"
+                    data-cat="photos-en"
+                    alt="Photos"
+                    >Bijoux</span
+                  >
+                  <span
+                    class="btn float-left on1 mt-5 roboto-font"
+                    data-cat="photos-en"
+                    alt="Photos"
+                    >Produits pour le corps</span
+                  >
+                  <span
+                    class="btn float-left on1 mt-5 roboto-font"
+                    data-cat="photos-en"
+                    alt="Photos"
+                    >Confiserie</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-2 mt-10">
+            <div class="card mx-4">
+              <img src="./image/img-1.png" class="card-img-top" alt="..." />
+              <div class="card1 bg-color p-6">
+                <div class="text-34 text-white primary-font">
+                  Nom Product
+                  <span class="float-md-end"> $35</span>
+                </div>
+                <div class="d-sm-flex mt-5">
+                  <img
+                    class=""
+                    src="./image/avtar1.png"
+                    class="rounded-circle"
+                    alt="Avatar"
+                  />
+                  <span class="text-18 text-white px-2 roboto-font"
+                    >John Temper</span
+                  >
+                </div>
+                <button class="btn btn-1 text-white w-full mt-7 roboto-font">
+                  Détails
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/image2.png" class="card-img-top" alt="..." />
+              <div class="card1 bg-color p-6">
+                <div class="text-34 text-white primary-font">
+                  Nom Product
+                  <span class="float-md-end"> $35</span>
+                </div>
+                <div class="d-sm-flex mt-5">
+                  <img
+                    class=""
+                    src="./image/avtar1.png"
+                    class="rounded-circle"
+                    alt="Avatar"
+                  />
+                  <span class="text-18 text-white px-2 roboto-font"
+                    >John Temper</span
+                  >
+                </div>
+                <button class="btn btn-1 text-white w-full mt-7 roboto-font">
+                  Détails
+                </button>
+              </div>
+            </div>
+            <div class="card mx-4">
+              <img src="./image/image3.png" class="card-img-top" alt="..." />
+              <div class="card1 bg-color p-6">
+                <div class="text-34 text-white primary-font">
+                  Nom Product
+                  <span class="float-md-end"> $35</span>
+                </div>
+                <div class="d-sm-flex mt-5">
+                  <img
+                    class=""
+                    src="./image/avtar1.png"
+                    class="rounded-circle"
+                    alt="Avatar"
+                  />
+                  <span class="text-18 text-white px-2 roboto-font"
+                    >John Temper</span
+                  >
+                </div>
+                <button class="btn btn-1 text-white w-full mt-7 roboto-font">
+                  Détails
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/image3.png" class="card-img-top" alt="..." />
+              <div class="card1 bg-color p-6">
+                <div class="text-34 text-white primary-font">
+                  Nom Product
+                  <span class="float-md-end"> $35</span>
+                </div>
+                <div class="d-sm-flex mt-5">
+                  <img
+                    class=""
+                    src="./image/avtar1.png"
+                    class="rounded-circle"
+                    alt="Avatar"
+                  />
+                  <span class="text-18 text-white px-2 roboto-font"
+                    >John Temper</span
+                  >
+                </div>
+                <button class="btn btn-1 text-white w-full mt-7 roboto-font">
+                  Détails
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel bg-footer position-relative mt-32">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="offset-lg-6 col-lg-6 mt-40 position-relative overlap-40"
+              >
+                <span class="text-white text-14 ls-wide roboto-font"
+                  >Pavilion de la faune</span
+                >
+                <h1 class="heading-h1 text-white mt-5 primary-font">
+                  Réserver votre visite
+                </h1>
+                <div class="border-star my-3"></div>
+                <p
+                  class="text-base font-regular text-white mt-5 roboto-font text-21"
+                >
+                  Vous n’êtes qu’à quelques clics de pouvoir visiter notre musée
+                  et faire la connaissance de notre équipe passionnée par la
+                  faune.
+                </p>
+                <div class="dropup top-12 mt-12">
+                  <button
+                    type="button"
+                    class="btn button-white-last font-24 px-md-5 px-sm-24 px-24 roboto-font"
+                  >
+                    <img src="./image/navbar button logo.svg" alt="" />Réserver
+                  </button>
+                  <div class="dropup-content2 text-center">
+                    <img
+                      class="img-fluid"
+                      src="./image/button logo2.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img class="bear1" src="./image/bear on last.png" alt="" />
+              <div class="overlay"></div>
+            </div>
+
+            <div class="row position-relative overlap-40 mt-40">
+              <div class="col-md-2 col-4">
+                <img class="w-full" src="./image/bear-icon.png" alt="" />
+              </div>
+              <div class="col-md-10 col-8 my-auto">
+                <p class="text-white text-footer roboto-font">
+                  Lorem ipsum dolor sit amet consectetur adipisicing sdcsdcdsc.
+                </p>
+                <ul class="list-unstyled d-md-flex mt-md-5 mt-2">
+                  <li class="mx-2">
+                    <i
+                      class="bi bi-facebook text-white text-footer roboto-font"
+                    >
+                      <span class="ms-2">/pavillondelafaune</span></i
+                    >
+                  </li>
+                  <li class="mx-2">
+                    <i
+                      class="bi bi-instagram text-white text-footer roboto-font"
+                      ><span class="ms-2">/pavillondelafaune</span></i
+                    >
+                  </li>
+                  <li class="mx-2 d-sm-block d-none">
+                    <i
+                      class="bi bi-telephone text-white text-footer roboto-font"
+                      ><span class="ms-2">/pavillondelafaune</span></i
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="text1"></div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

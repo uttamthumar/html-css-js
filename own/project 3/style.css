@@ -1,0 +1,147 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+
+}
+
+body {
+   font-size: 1.6rem;
+}
+
+.background {
+   background-image: url("./image/wp2497493.jpg");
+   height: 100vh;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+
+.container {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   margin-left: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   gap: 4rem;
+}
+
+.box {
+   height: 500px;
+   width: 100%;
+   background-color:  rgb(128 128 128);
+   border: 2px solid #504646;
+   box-shadow: 0px 4px 4px rgb(138, 136, 136);
+   border-radius: 3.5remm;
+
+}
+
+.content {
+   color: rgb(0, 0, 0);
+   text-align: center;
+}
+
+.content h2 {
+   font-size: 4.4rem;
+   font-weight: 400;
+   line-height: 80%;
+}
+
+.content h1 {
+   font-size: 6.4rem;
+   font-weight: 600;
+   line-height: 80%;
+}
+
+.calculate-form {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5rem;
+   padding: 5rem;
+   margin: auto;
+   place-content: center;
+   
+
+}
+.calculate-form button{
+   justify-self: center;
+}
+
+input {
+   height: 4.4rem;
+   padding: 0 3rem;
+   border-radius: 0.5rem;
+   background-color: transparent;
+   border: 1px solid white;
+   color: white;
+   font-size: 1.6rem;
+   max-width: 30rem;
+}
+input::placeholder {
+   color: white;
+   font-size: 1.6rem;
+
+}
+.primary-btn{
+   font-size: 2.5rem;
+   width: 16rem ;
+   padding: 1rem 2rem;
+   border-radius: 1rem;
+   background-color: rgb(47, 47, 49);
+   color: white;
+   border: none;
+}
+.primary-btn:hover{
+   opacity: 1;
+   background-color: blueviolet;
+}
+.result{
+   color: rgb(23, 0, 233);
+   text-align: center;
+   font-size: 1.5rem;
+}
+@media(max-width:1200px){
+   .container{
+      width: 100%;
+   }
+   .box{
+      width: 75%;
+   }
+   
+}
+@media(max-width:786px){
+   .container{
+      width: 100%;
+   }
+   .box{
+      width: 90%;
+   }
+   .calculate-form{
+      grid-template-columns: 1fr;
+      gap: 3rem;
+   }
+   input{
+      max-width: 100%;
+   }
+   .content h1 {
+      font-size:4.5rem;
+   }
+   .content h2 {
+      font-size: 3rem;
+   }
+   .calculate-form button{
+      justify-self: center;
+   }
+}
+  

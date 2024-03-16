@@ -1,0 +1,162 @@
+@media screen and (max-width:1580px) {
+    .bg-1 {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .font-24 {
+        font-weight: 400;
+        font-size: 16px;
+
+    }
+    .bg-3 {
+        background-image: url('../image/4.png');
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+    }
+
+    .heading-h1 {
+        Font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .font-24 {
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+
+    .heading-h1 {
+        Font-size: 40px;
+    }
+
+    .bear1 {
+        height: 650px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .dblock {
+        display: none;
+    }
+    .bg-3 {
+        background-image: url('../image/4.png');
+        height: 60vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1000;
+        transition: all ease-in-out 2s ;
+    }
+
+ 
+
+}
+
+.dropup-content {
+
+    position: absolute;
+    min-width: 102px;
+    bottom: 37px;
+    z-index: 1;
+
+}
+
+@media only screen and (max-width: 991px) {
+    .bg-1 {
+        position: absolute;
+        bottom: 0px;
+        z-index: 5;
+        height: 300px;
+    }
+
+    .navbar {
+        height: 130px;
+    }
+
+
+    .bg-2 {
+        background-image: url('../image/bg-2\ tree.png');
+        height: 100vh;
+        padding: 0px 0 0px 0;
+        background-size: 100%;
+        height: inherit;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out 0s;
+        bottom: 0px;
+        position: relative;
+
+    }
+
+    .navbar {
+        background-color: #1D1D1D;
+    }
+}
+
+
+
+@media screen and (max-width:1099px) {
+    .dropup-content1 {
+
+        position: absolute;
+        min-width: 102px;
+        bottom: 54px;
+        z-index: 1;
+
+    }
+}
+
+@media screen and (max-width:699px) {
+    .bg-1 {
+        position: absolute;
+        bottom: -11px;
+        z-index: 5;
+        height: 175px;
+    }
+
+    #myBtn {
+        display: none;
+    }
+
+    #myBtn1 {
+        display: none;
+    }
+    
+    .dropup-content2 {
+       
+        margin-left: 25%;
+        
+      }
+}
+
+    @media screen and (max-width:769px) {
+         .bg-1 {
+            position: absolute;
+            bottom: -11px;
+            z-index: 5;
+            height: 275px;
+        }
+
+        .bg-3 {
+            background-image: url('../image/4.png');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1000;
+        }
+      
+       
+        
+      
+    }

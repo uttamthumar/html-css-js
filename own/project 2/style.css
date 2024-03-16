@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+}
+.search{
+    display: flex;
+    width: 70%;
+}
+.search input{
+    padding: 3px 5px;
+    width: 100%;
+}
+.search input:focus-visible{
+    
+    border: 1px solid black;
+}
+.primary-btn{
+    background-color: yellow;
+    color:blue;
+    padding: 8px 16px;
+    border: none;
+}
+.primary-btn:hover{
+    background-color: rgb(153, 95, 207);
+}
+.primary-btn:active{
+    background-color: rgb(43, 135, 151);
+}
+/* *for card */
+
+.profile-box{
+    padding: 30px 30px;
+    box-shadow: 0 0 1rem rgb(0, 0, 0.1);
+    width: 70%;
+    transition: .5s ease-in;
+
+}
+.profile-box:hover{
+    transform: rotate(-3deg) scale(1.09);
+    transition: .5s ease-in;
+}
+.avatar img{
+    height:100% ;
+    width: 100%;
+    border-radius: 50%;
+}
+.avatar {
+    height: 5rem;
+    width: 5rem;
+}
+.top-section{
+    display: flex;
+
+
+}
+.top-section button{
+align-items: center;
+margin-left: 200px;
+    
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.left h1{
+    font-size: 0.9rem;
+}
+.about{
+    margin: 1rem;
+}
+.status{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(0px,10fr));
+
+}
+.status-item{
+    text-align: center;
+}

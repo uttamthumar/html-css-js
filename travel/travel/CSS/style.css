@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+background-color: rgb(253, 237, 239);
+}
+.primary-font{
+    font-family: 'Archivo', sans-serif;
+
+}
+
+
+.top-banner{
+    background-image: url('../assets/image/Bannermin1.png');
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+.button-white{
+    color: white;
+    background-color: none;
+    border: 2px solid white;
+}  
+.button-white:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.btn-color{
+    color: white;
+    border: none;
+    background-color:#e76f51;
+    padding: 6px 28px;
+}
+.btn-color:hover{
+    color:#e76f51;
+    background-color: white;
+}
+.card-position{
+    position: absolute;
+    top: 600px;
+    padding: 0px 100px;
+}
+
+.rounded-card{
+    border-radius: 25px;
+}
+.card-fix{
+    bottom: 110px;
+}
+.card-fix1{
+    bottom: 31px;
+}
+.head{
+    font-size: 81px;
+    font-weight: 900;
+}
+.heart {
+   background-color: white;
+   top: 24px;
+   right: 24px;
+}
+.bgimg{
+    height: 50vh;
+    width: 800px;
+}
+
+.mask-3{
+   background: url(../assets/image/3mask.png); 
+   position: relative;
+   background-repeat: no-repeat;
+   background-color: pink;
+   border-radius: 20px;
+   background-attachment: scroll;
+}
+.sent-icon{
+    background-image: url(../assets/image/paper-plane.svg);
+    text-shadow: 112px 112px black;
+}
+.iconset{
+    display: inline-block;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.sent{
+    background-color: #e76f51;
+    right: 16px;
+    top: 8px;
+    box-shadow: 3px 3px 25px #e76f51;
+}
+.btncolor{
+    background-color: none;
+    border: 1px solid #e76f51;
+    padding: 10px 45px;
+    transition: 1.00s;
+    
+}
+.btncolor:hover{
+    color: white;
+    background-color: #e76f51;  
+}
+.mask1{
+    background-image: url('../assets/image/1mask.png');
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.mask-2{
+    background-image: url('../assets/image/2mask.png');
+    background-repeat: no-repeat;
+}
+.arrow {
+    background-color: white;
+    
+    top: 20px;
+    right: 20px;
+    transform: translateY(-200%);
+}
+.to-top{
+    background: rgb(235, 176, 176);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 32px;
+    color: green;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+ 
+
+    
